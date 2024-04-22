@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Portfolio - Marion Dy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="/public/assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=open-sans:300,400,500,600,700,800" rel="stylesheet" />
@@ -15,28 +17,32 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mx-5 my-2">
                 <div class="d-flex align-items-center gap-5">
-                    <a class="navbar-brand fs-1 fw-bold" href="#">Marion Dy</a>
-                    <span class="navbar-text">&#128187; Développeuse web</span>
+                    <a class="navbar-brand fs-1 fw-700" href="#">Marion Dy</a>
+                    <!-- <span class="navbar-text">&#128187; Développeuse web</span> -->
                 </div>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link active" id="home" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Formation</a>
+                            <a class="nav-link" id="about" href="#">A propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Expérience</a>
+                            <a class="nav-link" id="education" href="#">Formation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" id="job" href="#">Expérience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" id="portfolio" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -44,12 +50,201 @@
         </nav>
     </header>
 
-    <main class="text-white">
-        <p>PARAGRAPHE</p>
+    <main class="text-white pt-5">
+
+<!-- ======= A PROPOS ======= -->
+        <section class="section about d-flex flex-column align-items-center bg-dark rounded mx-auto p-5 col-lg-8" id="about">
+            <h3>Développeuse web fullstack</h3>
+            <p class="fst-italic">
+                Spécialité de la formation : back-end, PHP/Symfony
+            </p>
+            <div class="separator"></div>
+            <div class="align-items-stretch mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Année de naissance :</strong> <span>1990</span>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Lieu de résidence :</strong> <span>Angers,
+                                    France</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Disponibilité :</strong> <span>dès à présent
+                                </span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Contact :</strong> <a
+                                    href="https://www.linkedin.com/in/marion-dy-631545116"><span>via Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="about mt-5">Fraîchement sortie de formation mais déterminée à pratiquer le développement autant que possible afin de
+                confirmer mes connaissances et d'en acquérir de nouvelles, je suis <b>à la recherche d'une expérience
+                professionnelle</b> en entreprise : CDD, CDI, ou stage, à Angers ou en remote. Avec la volonté
+                d'intégrer l'entreprise par la suite, bien sûr!</p>
+                <p class="about">Je suis <b>prête à me former</b> dans les technologies/langages que je ne connais pas encore : n'hésitez
+                donc pas à me contacter même si vous ne voyez pas certains de vos critères dans mon CV!
+                </p>
+            </div>
+        </section>
+
+
+<!-- ======= FORMATION ======= -->
+        <section class="section d-none col-lg-6" id="education" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Formation</h3>
+            <div class="resume-item">
+                <h4>Titre Pro de niveau 5 - Développeur Web et Web Mobile</h4>
+                <h5>Oct. 2023 - Avr. 2024</h5>
+                <p><em>O'Clock</em></p>
+                <p>Formation intensive : HTML/CSS, bases de JS, PHP, Laravel, Symfony, SQL, les API, bases de Docker et
+                    de mise en ligne<br><u>Spécialisation</u> : PHP/Symfony</p>
+            </div>
+            <div class="resume-item">
+                <h4>Diplôme d'Aptitude à l'Enseignement du Français Langue Étrangère</h4>
+                <h5>2014-2015</h5>
+                <p><em>Alliance Française de Paris</em></p>
+                <p>Spécialisation en Technologies de l'Information et de la Communication</p>
+            </div>
+            <div class="resume-item">
+                <h4>Etudes de Lettres Modernes (M1)</h4>
+                <h5>2008-2013</h5>
+                <p><em>Sorbonne Nouvelle</em></p>
+            </div>
+
+            <h3 class="resume-title">Formations complémentaires</h3>
+            <div class="resume-item">
+                <ul>
+                    <li>"Les data sciences de A à Z" (Udemy, 19.5h - mars 2021)</li>
+                    <li>"Enseigner avec Moodle", "Enseigner l'intercompréhension en langues romanes", "Nouvelles
+                        méthodologies d'apprentissage du français"</li>
+                </ul>
+            </div>
+        </section>
+
+
+<!-- ======= EXPERIENCE ======= -->
+        <div class="section d-none col-lg-6" id="job" data-aos="fade-up">
+            <h3 class="resume-title">Expérience professionnelle</h3>
+            <div class="resume-item">
+                <h4>Assistante de direction &amp; assistante chef de projet</h4>
+                <h5>Janv. 2018 - Sept. 2023</h5>
+                <p><em>Expo-Dispo Solutions Entreprises, Essonne</em></p>
+                <ul>
+                    <li>Missions administratives diverses : archivage, suivi comptable et RH simple, recrutement,
+                        dossiers administratifs (de R&D, demandes de subvention, documents contractuels...)</li>
+                    <li>Missions liées au e-commerce : suivi des commandes, du service client, gestion des flux et des
+                        marketplaces, du CMS (Prestashop)</li>
+                    <li>Missions liées à l'approvisionnement produits et aux ventes BtoB : suivi des imports, conformité
+                        produit et normes douanières, relations avec les usines et les clients (grande distribution),
+                        organisation logistique et des processus internes</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h4>Professeur de français langue étrangère</h4>
+                <h5>2014-2017</h5>
+                <p><em>France, Italie, République Tchèque</em></p>
+                <ul>
+                    <li>Enseignement auprès de jeunes et d'adultes, en groupe ou cours individuels, préparation aux
+                        examens, alphabétisation, enseignement à visée professionnelle ou récréative</li>
+                    <li>Observation, assistanat, recrutement, recherche de partenariats, organisation d'exposition
+                        (Alliance française)</li>
+                </ul>
+            </div>
+        </div>
+
+<!-- ======= COMPETENCES ======= -->
+        <section id="section skills" class="skills section-bg d-none">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Compétences</h2>
+                    <p>Il est toujours compliqué de s'évaluer sur des compétences dans un domaine si large et en
+                        constante évolution, mais pour vous donner une idée de mon profil :</p>
+                </div>
+
+                <div class="row skills-content">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="progress">
+                            <span class="skill">HTML <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">CSS/Bootstrap <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">PHP <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Javascript <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="progress">
+                            <span class="skill">Symfony <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Laravel <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">SQL<i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">CMS : Prestashop/Wordpress <i class="val"></i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="public/assets/js/app.js"></script>
+
 </body>
 
 <footer></footer>

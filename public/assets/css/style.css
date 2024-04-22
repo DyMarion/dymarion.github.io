@@ -12,18 +12,7 @@
     --palegreen : #5DD193;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-main {
-    height: 86vh;
-    background-image: url(/public/assets/img/bgblackwhite.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.4;
-}
+/* --- NAVBAR --- */
 
 .navbar a {
     color: white;
@@ -38,8 +27,49 @@ main {
     border-radius: 10%;
 }
 
-.nav-item :hover {
+.nav-item :hover , .nav-item .nav-link.active{
     color: var(--green);
     font-weight:600;
     border-top: 2.5px solid var(--green);
+}
+
+
+/* --- BODY --- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    height: 86vh;
+    position: relative; /* Ajoutez cette ligne pour positionner le pseudo-élément */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/public/assets/img/bgblackwhite.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1; /* Assurez-vous que le pseudo-élément est en arrière-plan */
+}
+
+.separator {
+    border-top: 2.5px solid var(--green);
+    width: 25%;
+}
+
+/* section {
+    border : 1px solid;
+    border-color: var(--green);
+} */
+
+/* --- ABOUT --- */
+
+.about {
+    text-indent: 1em;
 }
