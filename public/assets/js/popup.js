@@ -11,12 +11,17 @@ const popup = {
     },
 
     handleClick : function (event) {
-        const buttonId = event.currentTarget.id;
+        for(const button of popup.navButtons) {
+            button.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+
         for(const section of popup.sections) {
             section.classList.remove("d-none");
             section.classList.remove("d-flex");
             section.classList.add("d-none");
         }
+        const buttonId = event.currentTarget.id;
         const page = document.querySelector(".section#" + buttonId);
         page.classList.remove("d-none");
         page.classList.add("d-flex");
