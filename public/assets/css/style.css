@@ -1,43 +1,47 @@
 
 :root {
     /* --bs-deepgrey : #272932; */
-    --green : #18D26E;
-    --blue : #59C3C3;
+    /* --blue : #59C3C3;
     --magenta : #BA2C73;
-    --vanilla : #F0DFAD;
     --lightorange : #FCD0A1;
     --palebeige : #F2D1C9;
     --othergreen : #17D1AD;
-    --otherblue : #17B8D1;
-    --palegreen : #5DD193;
+    --palegreen : #5DD193; */
+    /* --otherblue : #17B8D1; */
+    --lightblack :  #212529;
+    --paleblue : #B8CBD0;
+    --vanilla : #EEE6D8;
+    --green : #18D26E;
+    --blue2 : #137C8B;
+    --green2 : #18534F;
 }
 
-/* --- NAVBAR --- */
-
-.navbar a {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.navbar span {
-    color: var(--green);
-}
-
-.nav-item {
-    border-radius: 10%;
-}
-
-.nav-item :hover , .nav-item .nav-link.active{
-    color: var(--green);
-    font-weight:600;
-    border-top: 2.5px solid var(--green);
-}
-
-
+/* ------------ */
 /* --- BODY --- */
+/* ------------ */
+
+body.theme-1 {
+    --color-bg : var(--lightblack);
+    --color-txt : white;
+    --color-highlights : var(--green);
+}
+
+body.theme-2 {
+    --color-bg : var(--paleblue);
+    --color-txt : var(--lightblack);
+    --color-highlights : var(--blue2);
+}
+
+body.theme-3 {
+    --color-bg : var(--vanilla);
+    --color-txt : var(--lightblack);
+    --color-highlights : var(--green2);
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-txt);
 }
 
 main {
@@ -45,18 +49,60 @@ main {
     position: relative; /* Pour positionner le pseudo-élément */
 }
 
-main::before {
+body.theme-1 main::before {
+    background: url(/public/assets/img/bgblackwhite.jpg) no-repeat center;
+    opacity: 0.4;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(/public/assets/img/bgblackwhite.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed; /* A tester */
-    opacity: 0.4;
     z-index: -1; /* Pour s'assurer que le pseudo-élément est en arrière-plan */
+}
+
+body.theme-2 main::before, body.theme-3 main::before {
+    background: url(/public/assets/img/background.jpg) no-repeat center;
+    opacity: 100;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-attachment: fixed; /* A tester */
+    z-index: -1; /* Pour s'assurer que le pseudo-élément est en arrière-plan */
+}
+
+/* -------------- */
+/* --- NAVBAR --- */
+/* -------------- */
+
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--color-txt);
+}
+
+.nav-item {
+    border-radius: 10%;
+}
+
+.nav-item :hover , .nav-item .nav-link.active{
+    color: var(--color-highlights);
+    font-weight:600;
+    border-top: 2.5px solid var(--color-highlights);
+}
+
+/* ---------------- */
+/* --- SECTIONS --- */
+/* ---------------- */
+
+.section {
+    background-color: var(--color-bg);
+    color: var(--color-txt);
 }
 
 h1 {
@@ -64,39 +110,170 @@ h1 {
 }
 
 .separator {
-    border-top: 2.5px solid var(--green);
+    border-top: 2.5px solid var(--color-highlights);
     width: 25%;
     margin: auto;
 }
 
 .separator2 {
-    border-top: 2.5px solid var(--green);
+    border-top: 2.5px solid var(--color-highlights);
     width: 10%;
     margin: auto;
 }
 
-/* --- SECTIONS --- */
-
 .bi-chevron-right {
-    color: var(--green);
+    color: var(--color-highlights);
 }
 
 .bi-check2-circle {
-    color: var(--green);
+    color: var(--color-highlights);
     padding-left: 0px;
     padding-right: 15px;
 }
 
+/* ------------- */
 /* --- ABOUT --- */
+/* ------------- */
 
-.about {
-    text-indent: 1em;
+.progress {
+    margin-bottom: 2rem;
 }
 
 .progress-bar {
-    background-color: var(--palegreen);
+    background-color: var(--color-highlights);
+    color: var(--color-bg);
+    font-weight: 600;
 }
 
-.progress-bar span {
-    
+/* ----------------- */
+/* --- PORTFOLIO --- */
+/* ----------------- */
+
+.project {
+    width: 45%;
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.project a {
+    display: block;
+    height: 200px;
+    height: 100%;
+    padding: 30px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project#omybeer a {
+    background: url(/public/assets/img/ScreenOmyBeer.png) no-repeat center;
+    background-size: cover;
+}
+
+.project#trobot a {
+    background: url(/public/assets/img/ScreenTRobot.png) no-repeat center;
+    background-size: cover;
+}
+
+.project a:hover,
+.project a:hover .ag-courses-item_date,
+.project a:hover .box-title {
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+
+
+.box-title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--lightblack);;
+    z-index: 2;
+    position: relative;
+}
+
+.box-description {
+    font-size: 18px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+.box-description span {
+    opacity: 0;
+}
+.project a:hover .box-description span {
+    opacity: 100;
+}
+.box-description span {
+    font-weight: bold;
+    color: #f9b234;
+    transition: color .5s ease
+}
+
+.project a:hover .corner {
+    transform: scale(10);
+}
+
+.corner {
+    height: 128px;
+    width: 128px;
+    background-color: var(--color-highlights);
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+/* .project:nth-child(2n) .corner {
+    background-color: var(--blue2);
+}
+.project:nth-child(3n) .corner {
+    background-color: var(--green2);
+}
+.project:nth-child(4n) .corner {
+    background-color: #952aff;
+}
+.project:nth-child(5n) .corner {
+    background-color: #cd3e94;
+}
+.project:nth-child(6n) .corner {
+    background-color: #4c49ea;
+} */
+
+@media only screen and (max-width: 979px) {
+    .project {
+    flex-basis: calc(50% - 30px);
+    }
+    .ag-courses-item_title {
+    font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ag-format-container {
+    width: 96%;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .project {
+    flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+    font-size: 24px;
+    }
+    .ag-courses-item_link {
+        padding: 22px 40px;
+    }
+    .box-description {
+        font-size: 16px;
+    }
 }

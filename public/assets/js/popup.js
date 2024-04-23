@@ -1,9 +1,8 @@
 const popup = {
-    navButtons : document.querySelectorAll(".nav-link"),
-    sections : document.querySelectorAll(".section"),
 
     init: function(){
-        console.log(this.navButtons);
+        popup.navButtons = document.querySelectorAll(".nav-link");
+        popup.sections = document.querySelectorAll(".section");
         for(const button of popup.navButtons) {
             button.addEventListener("click", popup.handleClick)
         }
