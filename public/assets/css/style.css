@@ -143,6 +143,17 @@ h1 {
     background-color: var(--color-highlights);
     color: var(--color-bg);
     font-weight: 600;
+    width: 0;
+    animation: animate 3s linear forwards;
+}
+
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: var(--width);
+    }
 }
 
 /* ----------------- */
@@ -166,52 +177,57 @@ h1 {
 }
 
 .project#omybeer a {
-    background: url(/public/assets/img/ScreenOmyBeer.png) no-repeat center;
+    background: url(/public/assets/img/screenBeer2.png) no-repeat center;
     background-size: cover;
 }
 
 .project#trobot a {
-    background: url(/public/assets/img/ScreenTRobot.png) no-repeat center;
+    background: url(/public/assets/img/screenRobot.png) no-repeat center;
     background-size: cover;
 }
 
 .project a:hover,
-.project a:hover .ag-courses-item_date,
 .project a:hover .box-title {
     text-decoration: none;
     color: var(--color-bg);
 }
 
 
-
 .box-title {
-    min-height: 87px;
-    margin: 0 0 25px;
+    height: 50px;
     overflow: hidden;
     font-weight: bold;
-    font-size: 30px;
-    color: var(--lightblack);;
+    font-size: 25px;
     z-index: 2;
     position: relative;
 }
 
 .box-description {
+    min-height: 80px;
     font-size: 18px;
-    color: #FFF;
     z-index: 2;
     position: relative;
 }
 
-.box-description span {
-    opacity: 0;
+.box-description p {
+    font-size: 16px;
+    margin-bottom: 0rem;
 }
-.project a:hover .box-description span {
-    opacity: 100;
-}
+
 .box-description span {
     font-weight: bold;
-    color: #f9b234;
-    transition: color .5s ease
+    margin-bottom: 2rem;
+}
+
+.box-title,
+.box-description {
+    opacity: 0;
+}
+
+.project a:hover .box-title,
+.project a:hover .box-description {
+    opacity: 100;
+    color: var(--color-bg);
 }
 
 .project a:hover .corner {
@@ -230,27 +246,12 @@ h1 {
     transition: all .5s ease;
 }
 
-/* .project:nth-child(2n) .corner {
-    background-color: var(--blue2);
-}
-.project:nth-child(3n) .corner {
-    background-color: var(--green2);
-}
-.project:nth-child(4n) .corner {
-    background-color: #952aff;
-}
-.project:nth-child(5n) .corner {
-    background-color: #cd3e94;
-}
-.project:nth-child(6n) .corner {
-    background-color: #4c49ea;
-} */
 
 @media only screen and (max-width: 979px) {
     .project {
     flex-basis: calc(50% - 30px);
     }
-    .ag-courses-item_title {
+    .box-title {
     font-size: 24px;
     }
 }
@@ -265,7 +266,7 @@ h1 {
     .project {
     flex-basis: 100%;
     }
-    .ag-courses-item_title {
+    .box-title {
     min-height: 72px;
     line-height: 1;
     font-size: 24px;
