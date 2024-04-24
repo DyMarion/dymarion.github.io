@@ -20,6 +20,13 @@
 /* --- BODY --- */
 /* ------------ */
 
+html {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 body.theme-1 {
     --color-bg : var(--lightblack);
     --color-txt : white;
@@ -173,6 +180,12 @@ h1 {
     100% {opacity:0;}
 }
 
+@media (max-width: 576px) {
+    .welcome {
+        font-size: 3rem;
+    }
+}
+
 /* ------------- */
 /* --- ABOUT --- */
 /* ------------- */
@@ -203,7 +216,7 @@ h1 {
 /* ----------------- */
 
 .project {
-    width: 45%;
+    /* width: 45%; */
     margin: 0 15px 30px;
     overflow: hidden;
     border-radius: 28px;
@@ -313,7 +326,7 @@ h1 {
     line-height: 1;
     font-size: 24px;
     }
-    .ag-courses-item_link {
+    .project a {
         padding: 22px 40px;
     }
     .box-description {
