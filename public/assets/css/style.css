@@ -1,26 +1,89 @@
 
 :root {
     /* --bs-deepgrey : #272932; */
-    --green : #18D26E;
-    --blue : #59C3C3;
+    /* --blue : #59C3C3;
     --magenta : #BA2C73;
-    --vanilla : #F0DFAD;
     --lightorange : #FCD0A1;
     --palebeige : #F2D1C9;
     --othergreen : #17D1AD;
-    --otherblue : #17B8D1;
-    --palegreen : #5DD193;
+    --palegreen : #5DD193; */
+    /* --otherblue : #17B8D1; */
+    --lightblack :  #212529;
+    --paleblue : #B8CBD0;
+    --vanilla : #EEE6D8;
+    --green : #18D26E;
+    --blue2 : #137C8B;
+    --green2 : #18534F;
 }
 
+/* ------------ */
+/* --- BODY --- */
+/* ------------ */
+
+body.theme-1 {
+    --color-bg : var(--lightblack);
+    --color-txt : white;
+    --color-highlights : var(--green);
+}
+
+body.theme-2 {
+    --color-bg : var(--paleblue);
+    --color-txt : var(--lightblack);
+    --color-highlights : var(--blue2);
+}
+
+body.theme-3 {
+    --color-bg : var(--vanilla);
+    --color-txt : var(--lightblack);
+    --color-highlights : var(--green2);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-txt);
+}
+
+main {
+    height: 100vh;
+    position: relative; /* Pour positionner le pseudo-élément */
+}
+
+body.theme-1 main::before {
+    background: url(/public/assets/img/bgblackwhite.jpg) no-repeat center;
+    opacity: 0.4;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-attachment: fixed; /* A tester */
+    z-index: -1; /* Pour s'assurer que le pseudo-élément est en arrière-plan */
+}
+
+body.theme-2 main::before, body.theme-3 main::before {
+    background: url(/public/assets/img/background.jpg) no-repeat center;
+    opacity: 100;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-attachment: fixed; /* A tester */
+    z-index: -1; /* Pour s'assurer que le pseudo-élément est en arrière-plan */
+}
+
+/* -------------- */
 /* --- NAVBAR --- */
+/* -------------- */
 
 .navbar a {
-    color: white;
     font-size: 1.5rem;
-}
-
-.navbar span {
-    color: var(--green);
+    color: var(--color-txt);
 }
 
 .nav-item {
@@ -28,48 +91,217 @@
 }
 
 .nav-item :hover , .nav-item .nav-link.active{
-    color: var(--green);
+    color: var(--color-highlights);
     font-weight:600;
-    border-top: 2.5px solid var(--green);
+    border-top: 2.5px solid var(--color-highlights);
 }
 
+/* ---------------- */
+/* --- SECTIONS --- */
+/* ---------------- */
 
-/* --- BODY --- */
-
-body {
-    font-family: 'Open Sans', sans-serif;
+#home {
+    background: none;
 }
 
-main {
-    height: 86vh;
-    position: relative; /* Ajoutez cette ligne pour positionner le pseudo-élément */
+.section {
+    background-color: var(--color-bg);
+    color: var(--color-txt);
 }
 
-main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(/public/assets/img/bgblackwhite.jpg) no-repeat center;
-    background-size: cover;
-    opacity: 0.4;
-    z-index: -1; /* Assurez-vous que le pseudo-élément est en arrière-plan */
+h1 {
+    text-align: center;
 }
 
 .separator {
-    border-top: 2.5px solid var(--green);
+    border-top: 2.5px solid var(--color-highlights);
     width: 25%;
+    margin: auto;
 }
 
-/* section {
-    border : 1px solid;
-    border-color: var(--green);
-} */
+.separator2 {
+    border-top: 2.5px solid var(--color-highlights);
+    width: 10%;
+    margin: auto;
+}
 
+.bi-chevron-right {
+    color: var(--color-highlights);
+}
+
+.bi-check2-circle {
+    color: var(--color-highlights);
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+
+/* ------------ */
+/* --- HOME --- */
+/* ------------ */
+
+.welcome {
+    font-size: 6rem;
+    color: var(--color-txt);
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    animation: showup 20s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:0.5;}
+    50% {opacity: 0.7;}
+    60% {opacity: 0.7;}
+    80% {opacity:0.5;}
+    100% {opacity:0;}
+}
+
+/* ------------- */
 /* --- ABOUT --- */
+/* ------------- */
 
-.about {
-    text-indent: 1em;
+.progress {
+    margin-bottom: 2rem;
+}
+
+.progress-bar {
+    background-color: var(--color-highlights);
+    color: var(--color-bg);
+    font-weight: 600;
+    width: 0;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: var(--width);
+    }
+}
+
+/* ----------------- */
+/* --- PORTFOLIO --- */
+/* ----------------- */
+
+.project {
+    width: 45%;
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.project a {
+    display: block;
+    height: 200px;
+    height: 100%;
+    padding: 30px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project#omybeer a {
+    background: url(/public/assets/img/screenBeer2.png) no-repeat center;
+    background-size: cover;
+}
+
+.project#trobot a {
+    background: url(/public/assets/img/screenRobot.png) no-repeat center;
+    background-size: cover;
+}
+
+.project a:hover,
+.project a:hover .box-title {
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+
+.box-title {
+    height: 50px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 2;
+    position: relative;
+}
+
+.box-description {
+    min-height: 80px;
+    font-size: 18px;
+    z-index: 2;
+    position: relative;
+}
+
+.box-description p {
+    font-size: 16px;
+    margin-bottom: 0rem;
+}
+
+.box-description span {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.box-title,
+.box-description {
+    opacity: 0;
+}
+
+.project a:hover .box-title,
+.project a:hover .box-description {
+    opacity: 100;
+    color: var(--color-bg);
+}
+
+.project a:hover .corner {
+    transform: scale(10);
+}
+
+.corner {
+    height: 128px;
+    width: 128px;
+    background-color: var(--color-highlights);
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+
+@media only screen and (max-width: 979px) {
+    .project {
+    flex-basis: calc(50% - 30px);
+    }
+    .box-title {
+    font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ag-format-container {
+    width: 96%;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .project {
+    flex-basis: 100%;
+    }
+    .box-title {
+    min-height: 72px;
+    line-height: 1;
+    font-size: 24px;
+    }
+    .ag-courses-item_link {
+        padding: 22px 40px;
+    }
+    .box-description {
+        font-size: 16px;
+    }
 }
