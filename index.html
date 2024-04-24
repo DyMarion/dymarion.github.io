@@ -11,32 +11,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="/public/assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=open-sans:300,400,500,600,700,800" rel="stylesheet" />
+    <!-- <link href="https://fonts.bunny.net/css?family=open-sans:300,400,500,600,700,800" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.bunny.net/css?family=montserrat-alternates:300,400,500,600,700,800" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.bunny.net/css?family=lato:300,400,700,900" rel="stylesheet" /> -->
+    <link href="https://fonts.bunny.net/css?family=poppins:200,300,400,500,600,700,800" rel="stylesheet" />
 </head>
 
 <body class="theme-1 h-100">
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mx-5 my-2">
-                <div class="d-flex align-items-center gap-5">
-                    <a class="navbar-brand fs-1 fw-700" href="#">Marion Dy</a>
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                        <h1 class="navbar-brand fs-1 fw-700 mx-auto">Marion Dy</h1>
+                    <div class="d-flex gap-lg-1 ms-lg-5">
+                        <a class="theme-switch" id="theme-1"><img src="./public/assets/img/switch1.png" alt="theme-1" width="50px"></a>
+                        <a class="theme-switch" id="theme-2"><img src="./public/assets/img/switch2.png" alt="theme-2" width="50px"></a>
+                        <a class="theme-switch" id="theme-3"><img src="./public/assets/img/switch3.png" alt="theme-3" width="50px"></a>
+                    </div>
                 </div>
-                <div class="d-flex gap-1 ms-3">
-                    <a class="theme-switch" id="theme-1"><img src="./public/assets/img/switch1.png" alt="theme-1" class="img-fluid" width="50px"></a>
-                    <a class="theme-switch" id="theme-2"><img src="./public/assets/img/switch2.png" alt="theme-2" class="img-fluid" width="50px"></a>
-                    <a class="theme-switch" id="theme-3"><img src="./public/assets/img/switch3.png" alt="theme-3" class="img-fluid" width="50px"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link" id="home" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link " id="home" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="about" href="#">A propos</a>
+                            <a class="nav-link text-center" id="about" href="#">A propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="education" href="#">Formation</a>
@@ -64,7 +66,7 @@
         </section>
 
 <!-- ======= A PROPOS ======= -->
-        <section class="section about d-none flex-column align-items-center rounded mx-auto p-5 pb-4 col-lg-8" id="about">
+        <section class="section about d-none flex-column align-items-center rounded mx-auto p-5 pb-3 col-lg-8" id="about">
             <h1 class="fs-3">Développeuse web fullstack</h1>
             <p class="fst-italic">
                 Spécialité de la formation : back-end, PHP/Symfony
@@ -145,7 +147,7 @@
 
 
 <!-- ======= FORMATION ======= -->
-        <section class="section about d-none flex-column align-items-center rounded mx-auto p-5 col-lg-8" id="education">
+        <section class="section about d-none flex-column align-items-center rounded mx-2 mx-lg-auto p-5 col-lg-8" id="education">
             <h1 class="fs-3 mb-3">Formation</h1>
             <div class="separator2"></div>
                 <div class="align-items-stretch mt-5 text-center">
@@ -182,13 +184,12 @@
                     <h2 class="fs-5 p-0 text-center">Assistante de direction &amp; assistante chef de projet</h2>
                     <p class="mb-4 text-center"><em>Janv. 2018 - Sept. 2023 // Expo-Dispo Solutions Entreprises, Essonne</em></p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check2-circle"></i>Missions administratives diverses : archivage, suivi comptable et RH simple, recrutement,
-                            dossiers administratifs (de R&D, demandes de subvention, documents contractuels...)</li>
-                        <li><i class="bi bi-check2-circle"></i>Missions liées au e-commerce : suivi des commandes, du service client, gestion des flux et des
+                        <li><i class="bi bi-check2-circle"></i>Missions administratives diverses : archivage, suivi comptable et RH simple, recrutement, facturation,
+                            dossiers administratifs (R&D, demandes de subvention, documents contractuels...)</li>
+                        <li><i class="bi bi-check2-circle"></i>Missions liées au e-commerce : suivi des commandes, du service client, suivi des flux et des
                             marketplaces, du CMS (Prestashop)</li>
                         <li><i class="bi bi-check2-circle"></i>Missions liées à l'approvisionnement produits et aux ventes BtoB : suivi des imports, conformité
-                            produit et normes douanières, relations avec les usines et les clients (grande distribution),
-                            organisation logistique et des processus internes</li>
+                            produit et normes douanières, relations avec les usines et les clients (grande distribution), participation à l'organisation logistique et des processus internes</li>
                     </ul>
                 </div>
                 <div class="separator2 mt-5"></div>
