@@ -49,14 +49,16 @@ body {
     /* font-family: 'Open Sans', sans-serif; */
     /* font-family: 'Montserrat Alternates', sans-serif; */
     /* font-family: 'Lato', sans-serif; */
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-
     background-color: var(--color-bg);
     color: var(--color-txt);
+    margin: 0;
+    padding: 0;
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     position: relative; /* Pour positionner le pseudo-élément */
 }
 
