@@ -211,12 +211,21 @@ h1 {
     }
 }
 
+/* ----------- */
+/* --- JOB --- */
+/* ----------- */
+
+@media (max-width: 576px) {
+    #job li {
+        word-break: break-all;
+    }
+}
+
 /* ----------------- */
 /* --- PORTFOLIO --- */
 /* ----------------- */
 
 .project {
-    /* width: 45%; */
     margin: 0 15px 30px;
     overflow: hidden;
     border-radius: 28px;
@@ -242,11 +251,12 @@ h1 {
 }
 
 .project a:hover,
-.project a:hover .box-title {
+.project a:hover .box-title,
+.project a:active,
+.project a:active .box-title {
     text-decoration: none;
     color: var(--color-bg);
 }
-
 
 .box-title {
     height: 50px;
