@@ -5,21 +5,20 @@ const portfolio = {
         portfolio.links = document.querySelectorAll(".project-link");
 
         if (isMobile) {
-            let clickCount = 0;
             for (const mobileLink of portfolio.links) {
+                let clickCount = 0;
                 mobileLink.addEventListener('click', function(event) {
                     clickCount++;
                     if (clickCount === 1) {
-                        event.preventDefault(); // Empêcher l'action par défaut du lien
+                        event.preventDefault(); // Prevent default "link" action : opening a new window
                     }
                     if (clickCount === 2) {
-                        // Réinitialiser le compteur après le deuxième clic
+                        // Reset count after the second click
                         clickCount = 0;
                     }
                 });
             }
         }
-
     },
 
 };
