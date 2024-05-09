@@ -133,7 +133,7 @@ body.theme-2 main::before, body.theme-3 main::before {
     color: var(--color-txt);
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
