@@ -11,31 +11,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="/public/assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <!-- <link href="https://fonts.bunny.net/css?family=open-sans:300,400,500,600,700,800" rel="stylesheet" /> -->
-    <!-- <link href="https://fonts.bunny.net/css?family=montserrat-alternates:300,400,500,600,700,800" rel="stylesheet" /> -->
-    <!-- <link href="https://fonts.bunny.net/css?family=lato:300,400,700,900" rel="stylesheet" /> -->
     <link href="https://fonts.bunny.net/css?family=poppins:200,300,400,500,600,700,800" rel="stylesheet" />
 </head>
 
 <body class="theme-1">
     <header>
-        <nav class="navbar navbar-expand-lg flex-wrap">
+        <nav class="navbar navbar-expand-lg flex-wrap" role="navigation">
             <div class="container-fluid mx-5 my-2">
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
                         <h1 class="navbar-brand fs-1 fw-700 mx-auto">Marion Dy</h1>
                     <div class="d-flex  ms-lg-5">
-                        <a class="theme-switch" id="theme-1"><img src="./public/assets/img/switch1.png" alt="theme-1" width="50px"></a>
-                        <a class="theme-switch" id="theme-2"><img src="./public/assets/img/switch2.png" alt="theme-2" width="50px"></a>
-                        <a class="theme-switch" id="theme-3"><img src="./public/assets/img/switch3.png" alt="theme-3" width="50px"></a>
+                        <a class="theme-switch" id="theme-1" title="Thème couleurs 1" role="button"><img src="./public/assets/img/switch1.png" alt="Thème couleurs 1" width="50"></a>
+                        <a class="theme-switch" id="theme-2" title="Thème couleurs 2" role="button"><img src="./public/assets/img/switch2.png" alt="Thème couleurs 2" width="50"></a>
+                        <a class="theme-switch" id="theme-3" title="Thème couleurs 3" role="button"><img src="./public/assets/img/switch3.png" alt="Thème couleurs 3" width="50"></a>
                     </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" role="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link " id="home" aria-current="page">Accueil</a>
+                            <a class="nav-link " id="home">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="about">A propos</a>
@@ -49,9 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link" id="portfolio">Portfolio</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" id="contact">Contact</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -62,13 +59,14 @@
 
 <!-- ======= ACCUEIL ======= -->
         <section class="section d-flex flex-start mx-3 mx-lg-auto mt-lg-5 p-lg-5 col-lg-8" id="home">
-            <div class="welcome mt-5">Bienvenue</div>
+            <div class="mt-5"> 
+                <h2 class="welcome fw-normal">Bienvenue</h2> 
+            </div>
         </section>
-        <!-- <p>&#169; Copyright 2024 Marion Dy</p> -->
 
 <!-- ======= A PROPOS ======= -->
         <section class="section d-none flex-column align-items-center rounded mx-2 mx-lg-auto p-5 pb-3 col-lg-8" id="about">
-            <h1 class="fs-3">Développeuse web fullstack</h1>
+            <h2 class="fs-3">Développeuse web fullstack</h1>
             <p class="fst-italic text-center">
                 Spécialité de la formation : back-end, PHP/Symfony
             </p>
@@ -76,7 +74,7 @@
             <div class="align-items-stretch mt-5">
                 <div class="row justify-content-center">
                     <div class="d-flex align-items-center justify-content-center mb-3 col-lg-3">
-                        <img src="./public/assets/img/profile-img.jpg" alt="photo Marion" class="img-fluid rounded-circle" width="130px">
+                        <img src="./public/assets/img/profile-img.jpg" alt="photo Marion" class="img-fluid rounded-circle" width="130">
                     </div>
                     <div class="d-flex align-items-center col-lg-4">
                         <ul class="list-unstyled">
@@ -90,8 +88,8 @@
                         <ul class="list-unstyled">
                             <li><i class="bi bi-chevron-right"></i> <strong>Disponibilité :</strong> <span>dès à présent
                                 </span></li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>Contact :</strong> <a
-                                    href="https://www.linkedin.com/in/marion-dy-631545116"><span>via Linkedin</span></a>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Contact :</strong> 
+                                <a href="https://www.linkedin.com/in/marion-dy-631545116" title="Lien vers profil Linkedin"><span>via Linkedin</span></a>
                             </li>
                         </ul>
                     </div>
@@ -108,7 +106,7 @@
             <div class="separator2"></div>
             <div class="d-flex flex-column rounded mx-2 mx-lg-auto mt-4 col-lg-12" id="skills">
                 <div class="text-center">
-                    <h2 class="fs-3 mb-3 text-center">Compétences</h2>
+                    <h3 class="fs-3 mb-3 text-center">Compétences</h2>
                     <p>Pour vous donner une idée de mon profil :</p>
                 </div>
                 <div class="d-flex flex-column flex-lg-row gap-3 gap-lg-5 justify-content-center mt-3">
@@ -120,7 +118,7 @@
                             <div class="progress-bar" role="progressbar" style="--width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS/Bootstrap</div>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">CMS : Prestashop/Wordpress</div>
+                            <div class="progress-bar" role="progressbar" style="--width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CMS Prestashop</div>
                         </div>
                     </div>
                     <div class="col-10 col-lg-3 mx-auto"> 
@@ -149,7 +147,7 @@
 
 <!-- ======= FORMATION ======= -->
         <section class="section d-none flex-column align-items-center rounded mx-2 mx-lg-auto p-5 col-lg-8" id="education">
-            <h1 class="fs-3 mb-3">Formation</h1>
+            <h2 class="fs-3 mb-3">Formation</h1>
             <div class="separator2"></div>
                 <div class="align-items-stretch mt-5 text-center">
                     <div class="education-item">
@@ -166,7 +164,7 @@
                         <p><em>2008-2013 // Sorbonne Nouvelle // Mémoire : La crise du langage dans "La Pluie d'Eté" et "L'Eté 80" de M. Duras</em></p>
                     </div>
                 </div>
-            <h2 class="fs-4 mt-5 mb-3 text-center">Formations complémentaires</h2>
+            <h3 class="fs-4 mt-5 mb-3 text-center">Formations complémentaires</h2>
             <div class="separator"></div>
             <div class="mt-4 col-lg-8 text-center">
                 <p>"Les data sciences de A à Z" (Udemy, 19.5h - mars 2021)</p>
@@ -178,7 +176,7 @@
 
 <!-- ======= EXPERIENCE ======= -->
         <div class="section d-none flex-column align-items-center rounded mx-2 mx-lg-auto p-5 col-lg-8" id="job">
-            <h1 class="fs-3 mb-3">Expérience professionnelle</h1>
+            <h2 class="fs-3 mb-3">Expérience professionnelle</h1>
             <div class="separator"></div>
             <div class="mt-5">
                 <div class="job-item">
@@ -210,12 +208,12 @@
 
 <!-- ======= PORTFOLIO ======= -->
         <div class="section d-none flex-column align-items-center rounded mx-2 mx-lg-4 mx-xl-auto pt-5 p-2 p-lg-5 col-xl-8" id="portfolio">
-            <h1 class="fs-3 mb-3">Portfolio</h1>
+            <h2 class="fs-3 mb-3">Portfolio</h1>
             <div class="separator2"></div>
             <div class="box d-flex justify-content-center flex-wrap mx-auto mt-5 p-2">
 
                 <div class="project col-8 col-lg-7 col-xl-5" id="omybeer">
-                    <a class="text-decoration-none project-link" href="https://www.omybeer.ovh/" alt="site O'My Beer" target="_blank">
+                    <a class="text-decoration-none project-link" href="https://www.omybeer.ovh/" title="Lien vers le site O'My Beer" target="_blank">
                         <div class="corner"></div>
                         <div class="box-title">O'My Beer!</div>
                         <div class="box-description">
@@ -229,7 +227,7 @@
                 </div>
 
                 <div class="project col-8 col-lg-7 col-xl-5" id="trobot">
-                    <a class="text-decoration-none project-link" href="#" alt="" target="_blank">
+                    <a class="text-decoration-none project-link" href="#" title="Lien vers le projet TRobot" target="_blank">
                         <div class="corner"></div>
                         <div class="box-title">TRobot</div>
                         <div class="box-description">
@@ -245,13 +243,14 @@
 
     </main>
 
+    <footer>
+        <!-- <p>&#169; Copyright 2024 Marion Dy</p> -->
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script type="module" src="public/assets/js/app.js"></script>
-
 </body>
-
-<footer></footer>
 
 </html>
