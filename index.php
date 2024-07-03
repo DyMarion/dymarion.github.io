@@ -211,7 +211,7 @@
             <h2 class="fs-3 mb-3">Portfolio</h2>
             <div class="separator2"></div>
             <div class="box d-flex justify-content-center flex-wrap mx-auto mt-5 p-2">
-
+                
                 <div class="project col-8 col-lg-7 col-xl-5" id="omybeer">
                     <a class="text-decoration-none project-link" href="https://www.omybeer.ovh/" title="Lien vers le site O'My Beer" target="_blank">
                         <div class="corner"></div>
@@ -238,6 +238,20 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="project col-8 col-lg-7 col-xl-5" id="enstock">
+                    <a class="text-decoration-none project-link" href="#" title="Lien vers la présentation d'En stock!" target="_blank">
+                        <div class="corner"></div>
+                        <div class="box-title">En stock!</div>
+                        <div class="box-description">
+                            <span>Gestionnaire de stock</span>
+                            <p>Conçu pour une gestion optimale de stock, permet de gérer facilement les entrées et les sorties de produits, ainsi que les références, catégories, emplacements, etc.</p>
+                            <p class="my-2"><I>PHP 8, Symfony 7, MySQL/MariaDB, JS Vanilla, HTML, CSS, Bootstrap</I></p>
+                            <span class="fs-6">Cliquez pour découvrir</span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
 

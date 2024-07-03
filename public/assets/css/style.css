@@ -252,6 +252,11 @@ h1, h2 {
     background-size: cover;
 }
 
+.project#enstock a {
+    background: url(/public/assets/img/screenStock.png) no-repeat center;
+    background-size: cover;
+}
+
 .project a:hover,
 .project a:hover .box-title,
 .project a:active,
