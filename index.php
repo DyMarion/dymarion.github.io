@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="project col-8 col-lg-7 col-xl-5" id="enstock">
-                    <a class="text-decoration-none project-link" href="#" title="Lien vers la présentation d'En stock!" target="_blank">
+                    <a class="text-decoration-none project-link" href="./templates/presentation_enstock.php" title="Lien vers la présentation d'En stock!">
                         <div class="corner"></div>
                         <div class="box-title">En stock!</div>
                         <div class="box-description">
