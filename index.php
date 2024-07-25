@@ -126,7 +126,7 @@
                             <div class="progress-bar" role="progressbar" style="--width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">PHP</div>
                         </div> 
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                            <div class="progress-bar" role="progressbar" style="--width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
                         </div>  
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="--width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">SQL/SGBDR</div>
@@ -138,6 +138,9 @@
                         </div>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="--width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Laravel</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="--width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">React</div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +234,7 @@
                         <div class="corner"></div>
                         <div class="box-title">TRobot</div>
                         <div class="box-description">
-                            <span>Petite application fun d'encodage de mots</span>
+                            <span>Mini application fun d'encodage de mots</span>
                             <p>Vous avez toujours rêvé d'écrire votre prénom en binaire, morse, runique ou Vigénère? TRobot le fait pour vous!</p>
                             <p class="my-2"><I>PHP 8, JS Vanilla, HTML, CSS</I></p>
                             <span class="fs-6">Cliquez pour découvrir</span>
@@ -247,6 +250,19 @@
                             <span>Gestionnaire de stock</span>
                             <p>Conçu pour une gestion optimale de stock, permet de gérer facilement les entrées et les sorties de produits, ainsi que les références, catégories, emplacements, etc.</p>
                             <p class="my-2"><I>PHP 8, Symfony 7, MySQL/MariaDB, JS Vanilla, HTML, CSS, Bootstrap</I></p>
+                            <span class="fs-6">Cliquez pour découvrir</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project col-8 col-lg-7 col-xl-5" id="bakery">
+                    <a class="text-decoration-none project-link" href="https://www.mariondev.fr/bakery" title="Lien vers le projet Bakery">
+                        <div class="corner"></div>
+                        <div class="box-title">Bakery</div>
+                        <div class="box-description">
+                            <span>Site vitrine fictif</span>
+                            <p>Site vitrine d'une boulangerie fictive. Le but ? Apprendre React !</p>
+                            <p class="my-2"><I>React, JS, CSS</I></p>
                             <span class="fs-6">Cliquez pour découvrir</span>
                         </div>
                     </a>

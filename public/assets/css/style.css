@@ -257,6 +257,11 @@ h1, h2 {
     background-size: cover;
 }
 
+.project#bakery a {
+    background: url(/public/assets/img/screenBakery.png) no-repeat center;
+    background-size: cover;
+}
+
 .project a:hover,
 .project a:hover .box-title,
 .project a:active,
