@@ -256,7 +256,7 @@
                 </div>
 
                 <div class="project col-8 col-lg-7 col-xl-5" id="bakery">
-                    <a class="text-decoration-none project-link" href="https://www.mariondev.fr/bakery" title="Lien vers le projet Bakery">
+                    <a class="text-decoration-none project-link" href="https://www.mariondev.fr/bakery" title="Lien vers le projet Bakery" target="_blank">
                         <div class="corner"></div>
                         <div class="box-title">Bakery</div>
                         <div class="box-description">
