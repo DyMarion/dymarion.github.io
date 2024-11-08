@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <p class="about mt-4">Fraîchement sortie de formation mais déterminée à pratiquer le développement autant que possible afin de
-                confirmer mes connaissances et d'en acquérir de nouvelles, je suis <b>à la recherche d'une expérience
+                confirmer mes connaissances ete nouvelles, je suis <b>à la recherche d'une expérience
                 professionnelle</b> en entreprise : CDD, CDI, ou stage, à Angers ou en remote. Avec la volonté
                 d'intégrer l'entreprise par la suite, bien sûr!</p>
                 <p class="about">Je suis <b>prête à me former</b> dans les technologies/langages que je ne connais pas encore : n'hésitez
@@ -104,44 +104,34 @@
             </div>
 <!-- COMPETENCES -->
             <div class="separator2"></div>
-            <div class="d-flex flex-column rounded mx-2 mx-lg-auto mt-4 col-lg-12" id="skills">
+            <div class="d-flex flex-column rounded mx-2 mx-lg-auto mt-4 mb-4 col-lg-12" id="skills">
                 <div class="text-center">
                     <h3 class="fs-3 mb-3 text-center">Compétences</h3>
-                    <p>Pour vous donner une idée de mon profil :</p>
+                    <!-- <p>Technologies utilisées :</p> -->
                 </div>
                 <div class="d-flex flex-column flex-lg-row gap-3 gap-lg-5 justify-content-center mt-3">
                     <div class="col-10 col-lg-3 mx-auto">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS/Bootstrap</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CMS Prestashop</div>
-                        </div>
+                        <div class="techno">HTML</div>
+                        <div class="techno">CSS</div>
+                        <div class="techno">PHP</div>
+                        <div class="techno">SQL</div>
+                        <div class="techno">JavaScript</div>
+                        <div class="techno">TypeScript</div>
                     </div>
                     <div class="col-10 col-lg-3 mx-auto"> 
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">PHP</div>
-                        </div> 
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
-                        </div>  
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">SQL/SGBDR</div>
-                        </div> 
+                        <div class="techno">Bootstrap</div>
+                        <div class="techno">Symfony</div>
+                        <div class="techno">Laravel</div>
+                        <div class="techno">React</div>
+                        <div class="techno">Node</div>
+                        <div class="techno">Express</div>
                     </div>
                     <div class="col-10 col-lg-3 mx-auto">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Symfony</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Laravel</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="--width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">React</div>
-                        </div>
+                        <div class="techno">SGBDR</div>
+                        <div class="techno">MariaDB</div>
+                        <div class="techno">MongoDB</div>
+                        <div class="techno">Prestashop</div>
+                        <div class="techno">Wordpress</div>
                     </div>
                 </div>
             </div>
@@ -182,6 +172,15 @@
             <h2 class="fs-3 mb-3">Expérience professionnelle</h2>
             <div class="separator"></div>
             <div class="mt-5">
+                <div class="job-item">
+                    <h3 class="fs-5 p-0 text-center">Stagiaire développeuse web</h3>
+                    <p class="mb-4 text-center"><em>Août 2024 - Oct. 2024 // Andragogy, Remote</em></p>
+                    <ul class="list-unstyled">
+                        <li class="pb-2 pb-lg-1"><i class="bi bi-check2-circle"></i>Développement d'outils internes en stack MERN : aides aux inscriptions et au suivi des étudiants et parcours </li>
+                        <li class="pb-2 pb-lg-1"><i class="bi bi-check2-circle"></i>Rédaction de contenu pédagogique assistée par IA, relecture de cours</li>
+                    </ul>
+                </div>
+                <div class="separator2 mt-5 mb-5"></div>
                 <div class="job-item">
                     <h3 class="fs-5 p-0 text-center">Assistante de direction &amp; assistante chef de projet</h3>
                     <p class="mb-4 text-center"><em>Janv. 2018 - Sept. 2023 // Expo-Dispo Solutions Entreprises, Essonne</em></p>
@@ -271,11 +270,12 @@
             </div>
         </div>
 
+        <!-- <p class="credits">&#169; Copyright 2024 Marion Dy</p> -->
     </main>
 
-    <footer>
-        <!-- <p>&#169; Copyright 2024 Marion Dy</p> -->
-    </footer>
+    <!-- <footer>
+        <p>&#169; Copyright 2024 Marion Dy</p>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
